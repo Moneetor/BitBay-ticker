@@ -17,7 +17,8 @@ class ComboBoxWindow(Gtk.Window):
 
         self.set_default_size(200, 200)
         self.set_border_width(10)
-
+        self.set_icon_from_file('bitcoin.png')
+	
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
 
         country_store = Gtk.ListStore(str)
